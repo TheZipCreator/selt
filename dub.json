@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"Zip"
+	],
+	"copyright": "Copyright © 2022, Zip",
+	"description": "Interpreter for the Selt language",
+	"license": "GNU General Public License v3",
+	"name": "selt"
+}

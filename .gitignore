@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/selt
+selt.so
+selt.dylib
+selt.dll
+selt.a
+selt.lib
+selt-test-*
+*.exe
+*.o
+*.obj
+*.lst
+*.pdb
+test.selt
