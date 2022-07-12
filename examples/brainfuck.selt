@@ -1,0 +1,607 @@
+loop:
+  print BF\>\ 
+  code = @stdin
+  goto end~(@code == `)
+  end0:
+  ip = 0
+  execloop1:
+    goto i~(@code.@ip)
+    i+:tape~@ptr = @(tape~@ptr)+1
+    goto execend
+    i-:tape~@ptr = @(tape~@ptr)-1
+    goto execend
+    i>:ptr = @ptr+1
+    goto execend
+    i<:ptr = @ptr-1
+    goto execend
+    i.:goto ch~@(tape~@ptr)
+      ch0:print \ 
+      goto execend
+      ch1:print \
+      goto execend
+      ch2:print \
+      goto execend
+      ch3:print \
+      goto execend
+      ch4:print \
+      goto execend
+      ch5:print \
+      goto execend
+      ch6:print \
+      goto execend
+      ch7:print \
+      goto execend
+      ch8:print \
+      goto execend
+      ch9:print \	
+      goto execend
+      ch10:println `
+      goto execend
+      ch11:print \
+      goto execend
+      ch12:print \
+      goto execend
+      ch13:print \ 
+      goto execend
+      ch14:print \
+      goto execend
+      ch15:print \
+      goto execend
+      ch16:print \
+      goto execend
+      ch17:print \
+      goto execend
+      ch18:print \
+      goto execend
+      ch19:print \
+      goto execend
+      ch20:print \
+      goto execend
+      ch21:print \
+      goto execend
+      ch22:print \
+      goto execend
+      ch23:print \
+      goto execend
+      ch24:print \
+      goto execend
+      ch25:print \
+      goto execend
+      ch26:print \
+      goto execend
+      ch27:print \
+      goto execend
+      ch28:print \
+      goto execend
+      ch29:print \
+      goto execend
+      ch30:print \
+      goto execend
+      ch31:print \
+      goto execend
+      ch32:print \ 
+      goto execend
+      ch33:print \!
+      goto execend
+      ch34:print \"
+      goto execend
+      ch35:print \#
+      goto execend
+      ch36:print \$
+      goto execend
+      ch37:print \%
+      goto execend
+      ch38:print \&
+      goto execend
+      ch39:print \'
+      goto execend
+      ch40:print \(
+      goto execend
+      ch41:print \)
+      goto execend
+      ch42:print \*
+      goto execend
+      ch43:print \+
+      goto execend
+      ch44:print \,
+      goto execend
+      ch45:print \-
+      goto execend
+      ch46:print \.
+      goto execend
+      ch47:print \/
+      goto execend
+      ch48:print \0
+      goto execend
+      ch49:print \1
+      goto execend
+      ch50:print \2
+      goto execend
+      ch51:print \3
+      goto execend
+      ch52:print \4
+      goto execend
+      ch53:print \5
+      goto execend
+      ch54:print \6
+      goto execend
+      ch55:print \7
+      goto execend
+      ch56:print \8
+      goto execend
+      ch57:print \9
+      goto execend
+      ch58:print \;
+      goto execend
+      ch59:print \;
+      goto execend
+      ch60:print \<
+      goto execend
+      ch61:print \=
+      goto execend
+      ch62:print \>
+      goto execend
+      ch63:print \?
+      goto execend
+      ch64:print \@
+      goto execend
+      ch65:print \A
+      goto execend
+      ch66:print \B
+      goto execend
+      ch67:print \C
+      goto execend
+      ch68:print \D
+      goto execend
+      ch69:print \E
+      goto execend
+      ch70:print \F
+      goto execend
+      ch71:print \G
+      goto execend
+      ch72:print \H
+      goto execend
+      ch73:print \I
+      goto execend
+      ch74:print \J
+      goto execend
+      ch75:print \K
+      goto execend
+      ch76:print \L
+      goto execend
+      ch77:print \M
+      goto execend
+      ch78:print \N
+      goto execend
+      ch79:print \O
+      goto execend
+      ch80:print \P
+      goto execend
+      ch81:print \Q
+      goto execend
+      ch82:print \R
+      goto execend
+      ch83:print \S
+      goto execend
+      ch84:print \T
+      goto execend
+      ch85:print \U
+      goto execend
+      ch86:print \V
+      goto execend
+      ch87:print \W
+      goto execend
+      ch88:print \X
+      goto execend
+      ch89:print \Y
+      goto execend
+      ch90:print \Z
+      goto execend
+      ch91:print \[
+      goto execend
+      ch92:print \\
+      goto execend
+      ch93:print \]
+      goto execend
+      ch94:print \^
+      goto execend
+      ch95:print \_
+      goto execend
+      ch96:print \`
+      goto execend
+      ch97:print \a
+      goto execend
+      ch98:print \b
+      goto execend
+      ch99:print \c
+      goto execend
+      ch100:print \d
+      goto execend
+      ch101:print \e
+      goto execend
+      ch102:print \f
+      goto execend
+      ch103:print \g
+      goto execend
+      ch104:print \h
+      goto execend
+      ch105:print \i
+      goto execend
+      ch106:print \j
+      goto execend
+      ch107:print \k
+      goto execend
+      ch108:print \l
+      goto execend
+      ch109:print \m
+      goto execend
+      ch110:print \n
+      goto execend
+      ch111:print \o
+      goto execend
+      ch112:print \p
+      goto execend
+      ch113:print \q
+      goto execend
+      ch114:print \r
+      goto execend
+      ch115:print \s
+      goto execend
+      ch116:print \t
+      goto execend
+      ch117:print \u
+      goto execend
+      ch118:print \v
+      goto execend
+      ch119:print \w
+      goto execend
+      ch120:print \x
+      goto execend
+      ch121:print \y
+      goto execend
+      ch122:print \z
+      goto execend
+      ch123:print \{
+      goto execend
+      ch124:print \|
+      goto execend
+      ch125:print \}
+      goto execend
+      ch126:print \~
+      goto execend
+      ch127:print \
+      goto execend
+      ch128:print \
+      goto execend
+      ch129:print \
+      goto execend
+      ch130:print \
+      goto execend
+      ch131:print \
+      goto execend
+      ch132:print \
+      goto execend
+      ch133:print \
+      goto execend
+      ch134:print \
+      goto execend
+      ch135:print \
+      goto execend
+      ch136:print \
+      goto execend
+      ch137:print \
+      goto execend
+      ch138:print \
+      goto execend
+      ch139:print \
+      goto execend
+      ch140:print \
+      goto execend
+      ch141:print \
+      goto execend
+      ch142:print \
+      goto execend
+      ch143:print \
+      goto execend
+      ch144:print \
+      goto execend
+      ch145:print \
+      goto execend
+      ch146:print \
+      goto execend
+      ch147:print \
+      goto execend
+      ch148:print \
+      goto execend
+      ch149:print \
+      goto execend
+      ch150:print \
+      goto execend
+      ch151:print \
+      goto execend
+      ch152:print \
+      goto execend
+      ch153:print \
+      goto execend
+      ch154:print \
+      goto execend
+      ch155:print \
+      goto execend
+      ch156:print \
+      goto execend
+      ch157:print \
+      goto execend
+      ch158:print \
+      goto execend
+      ch159:print \
+      goto execend
+      ch160:print \ 
+      goto execend
+      ch161:print \¡
+      goto execend
+      ch162:print \¢
+      goto execend
+      ch163:print \£
+      goto execend
+      ch164:print \¤
+      goto execend
+      ch165:print \¥
+      goto execend
+      ch166:print \¦
+      goto execend
+      ch167:print \§
+      goto execend
+      ch168:print \¨
+      goto execend
+      ch169:print \©
+      goto execend
+      ch170:print \ª
+      goto execend
+      ch171:print \«
+      goto execend
+      ch172:print \¬
+      goto execend
+      ch173:print \­ 
+      goto execend
+      ch174:print \®
+      goto execend
+      ch175:print \¯
+      goto execend
+      ch176:print \°
+      goto execend
+      ch177:print \±
+      goto execend
+      ch178:print \²
+      goto execend
+      ch179:print \³
+      goto execend
+      ch180:print \´
+      goto execend
+      ch181:print \µ
+      goto execend
+      ch182:print \¶
+      goto execend
+      ch183:print \·
+      goto execend
+      ch184:print \¸
+      goto execend
+      ch185:print \¹
+      goto execend
+      ch186:print \º
+      goto execend
+      ch187:print \»
+      goto execend
+      ch188:print \¼
+      goto execend
+      ch189:print \½
+      goto execend
+      ch190:print \¾
+      goto execend
+      ch191:print \¿
+      goto execend
+      ch192:print \À
+      goto execend
+      ch193:print \Á
+      goto execend
+      ch194:print \Â
+      goto execend
+      ch195:print \Ã
+      goto execend
+      ch196:print \Ä
+      goto execend
+      ch197:print \Å
+      goto execend
+      ch198:print \Æ
+      goto execend
+      ch199:print \Ç
+      goto execend
+      ch200:print \È
+      goto execend
+      ch201:print \É
+      goto execend
+      ch202:print \Ê
+      goto execend
+      ch203:print \Ë
+      goto execend
+      ch204:print \Ì
+      goto execend
+      ch205:print \Í
+      goto execend
+      ch206:print \Î
+      goto execend
+      ch207:print \Ï
+      goto execend
+      ch208:print \Ð
+      goto execend
+      ch209:print \Ñ
+      goto execend
+      ch210:print \Ò
+      goto execend
+      ch211:print \Ó
+      goto execend
+      ch212:print \Ô
+      goto execend
+      ch213:print \Õ
+      goto execend
+      ch214:print \Ö
+      goto execend
+      ch215:print \×
+      goto execend
+      ch216:print \Ø
+      goto execend
+      ch217:print \Ù
+      goto execend
+      ch218:print \Ú
+      goto execend
+      ch219:print \Û
+      goto execend
+      ch220:print \Ü
+      goto execend
+      ch221:print \Ý
+      goto execend
+      ch222:print \Þ
+      goto execend
+      ch223:print \ß
+      goto execend
+      ch224:print \à
+      goto execend
+      ch225:print \á
+      goto execend
+      ch226:print \â
+      goto execend
+      ch227:print \ã
+      goto execend
+      ch228:print \ä
+      goto execend
+      ch229:print \å
+      goto execend
+      ch230:print \æ
+      goto execend
+      ch231:print \ç
+      goto execend
+      ch232:print \è
+      goto execend
+      ch233:print \é
+      goto execend
+      ch234:print \ê
+      goto execend
+      ch235:print \ë
+      goto execend
+      ch236:print \ì
+      goto execend
+      ch237:print \í
+      goto execend
+      ch238:print \î
+      goto execend
+      ch239:print \ï
+      goto execend
+      ch240:print \ð
+      goto execend
+      ch241:print \ñ
+      goto execend
+      ch242:print \ò
+      goto execend
+      ch243:print \ó
+      goto execend
+      ch244:print \ô
+      goto execend
+      ch245:print \õ
+      goto execend
+      ch246:print \ö
+      goto execend
+      ch247:print \÷
+      goto execend
+      ch248:print \ø
+      goto execend
+      ch249:print \ù
+      goto execend
+      ch250:print \ú
+      goto execend
+      ch251:print \û
+      goto execend
+      ch252:print \ü
+      goto execend
+      ch253:print \ý
+      goto execend
+      ch254:print \þ
+      goto execend
+      ch255:print \ÿ
+      goto execend
+    goto execend
+    i[:goto lbrack~(@(tape~@ptr) == 0)
+    lbrack1:
+      brack = 1
+      lbrack_loop1:
+        ip = @ip+1
+        goto lbrack_~(@code.@ip)
+        lbrack_[: brack = @brack+1
+        goto lbrack_\+
+        lbrack_]: brack = @brack-1
+        lbrack_+:
+        lbrack_-:
+        lbrack_>:
+        lbrack_<:
+        lbrack_.:
+        lbrack_,:goto lbrack_loop~(@brack > 0)
+      lbrack_loop0: goto execend
+    i]:goto rbrack~(@(tape~@ptr) != 0)
+    rbrack1:
+      brack = 1
+      rbrack_loop1:
+        ip = @ip-1
+        goto rbrack_~(@code.@ip)
+        rbrack_[: brack = @brack-1
+        goto rbrack_\+
+        rbrack_]: brack = @brack+1
+        rbrack_+:
+        rbrack_-:
+        rbrack_>:
+        rbrack_<:
+        rbrack_.:
+        rbrack_,:goto rbrack_loop~(@brack > 0)
+      rbrack_loop0: goto execend
+    lbrack0:
+    rbrack0:
+    execend:
+    ip = @ip+1
+    goto execloop~(@ip < ?@code)
+  execloop0:
+    println `
+  end1:
+    goto loop
+code:
+ip:
+brack:
+ptr:0
+tape0:0
+tape1:0
+tape2:0
+tape3:0
+tape4:0
+tape5:0
+tape6:0
+tape7:0
+tape8:0
+tape9:0
+tape10:0
+tape11:0
+tape12:0
+tape13:0
+tape14:0
+tape15:0
+tape16:0
+tape17:0
+tape18:0
+tape19:0
+tape20:0
+tape21:0
+tape22:0
+tape23:0
+tape24:0
+tape25:0
+tape26:0
+tape27:0
+tape28:0
+tape29:0
+tape30:0
+tape31:0
