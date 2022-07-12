@@ -1,6 +1,6 @@
 # Selt
 
-Interpreter for the Selt language
+Interpreter for the Selt language. Documention [here](https://esolangs.org/wiki/Selt).
 
 ## Usage
 
